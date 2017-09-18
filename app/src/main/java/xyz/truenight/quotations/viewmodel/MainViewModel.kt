@@ -130,8 +130,7 @@ class MainViewModel : LifecycleTrackingViewModel() {
                 Repository.toolUnchecked(Source { webSocket })
                         .subscribe(),
                 Repository.quotationList()
-                        .compose(items.transformer())
-                        .subscribe(items.consumer(), Action1 { t -> Log.e(TAG, "", t) })
+                        .subscribe(items, Action1 { t -> Log.e(TAG, "", t) })
         )
 
         val share = rxWebSockets

@@ -93,8 +93,8 @@ object Repository {
      */
     fun toolChecked(source: Source<WebSocket?>): Observable<Any> =
             RxPublisher.observe<Quotation.Type>(Quotation.select)
-                    .observeOn(Schedulers.io())
                     .doOnNext { Storage.notify(Quotation.list) }
+                    .observeOn(Schedulers.io())
                     .flatMap { type ->
                         if (source.get() != null && type != null) {
                             val subscribe = Payload.subscribe(type)
@@ -111,8 +111,8 @@ object Repository {
      */
     fun toolUnchecked(source: Source<WebSocket?>): Observable<Any> =
             RxPublisher.observe<Quotation.Type>(Quotation.unselect)
-                    .observeOn(Schedulers.io())
                     .doOnNext { Storage.notify(Quotation.list) }
+                    .observeOn(Schedulers.io())
                     .flatMap { type ->
                         if (source.get() != null && type != null) {
                             val unsubscribe = Payload.unsubscribe(type)
