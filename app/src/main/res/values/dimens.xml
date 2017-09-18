@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="field_margin">8dp</dimen>
+    <dimen name="divider_margin">2dp</dimen>
+    <dimen name="fab_inset">82dp</dimen>
+    <dimen name="tool_padding">16dp</dimen>
+    <dimen name="title_margin">12dp</dimen>
+    <dimen name="button_padding">16dp</dimen>
+</resources>

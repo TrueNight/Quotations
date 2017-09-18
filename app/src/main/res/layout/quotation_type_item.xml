@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="xyz.truenight.quotations.viewmodel.ToolViewModel"/>
+
+    </data>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@{item.resId}"
+        app:selected="@{item.selected}"
+        android:drawableRight="@{item.selected ? @drawable/ic_check_circle : null}"
+        tools:text="EUR / GBP"
+        android:textColor="@color/text_selector"
+        android:onClick="@{() -> item.click()}"
+        android:background="@drawable/background_tool"/>
+
+</layout>

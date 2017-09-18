@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Quotations</string>
+    <string name="action_settings">Settings</string>
+    <string name="eur_usd">EUR / USD</string>
+    <string name="eur_gbp">EUR / GBP</string>
+    <string name="usd_jpy">USD / JPY</string>
+    <string name="gbp_usd">GBP / USD</string>
+    <string name="usd_chf">USD / CHF</string>
+    <string name="usd_cad">USD / CAD</string>
+    <string name="aud_usd">AUD / USD</string>
+    <string name="eur_jpy">EUR / JPY</string>
+    <string name="eur_chf">EUR / CHF</string>
+    <string name="bid_ask">%1$.5f\n/\n%2$.5f</string>
+    <string name="floating_num">%1$.1f</string>
+    <string name="select_quotations">Select quotations</string>
+    <string name="sort_by">Sort by</string>
+    <string name="name">Name</string>
+    <string name="ask">Ask</string>
+    <string name="bid">Bid</string>
+    <string name="spread">Spread</string>
+    <string name="symbol">Symbol</string>
+    <string name="bid_ask_column">BID / ASK</string>
+    <string name="spread_column">SPREAD</string>
+    <string name="remove_items_hint">Remove items by swipe left</string>
+    <string name="item_removed_from_list">&#160;removed from list</string>
+    <string name="cancel">Cancel</string>
+</resources>
